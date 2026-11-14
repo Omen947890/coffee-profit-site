@@ -5,8 +5,9 @@
 <meta name="p:domain_verify" content="dfe06019ffa6b5aed301ecf9ae08fcfa"/>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Калькулятор собівартості кави для кав’ярні в Excel. Розрахунок витрат, маржі, прибутку та рекомендованої ціни для 100 позицій меню.">
-<title>Калькулятор собівартості кави та прибутку кав'ярні | Coffee Profit</title>
+<meta name="description" content="Excel-калькулятор для кав’ярні: собівартість напоїв, фактична маржа та ціна для фіксованої цільової маржі 70%. До 100 позицій меню, приклади та інструкція.">
+<link rel="canonical" href="https://omen947890.github.io/coffee-profit-site/">
+<title>Калькулятор собівартості кави та маржі в Excel | Coffee Profit</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#0c1726;color:#f7f9fc;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
@@ -20,6 +21,7 @@ h1{font-size:clamp(36px,6vw,64px);line-height:1.12;margin:0 0 24px}
 h2{font-size:30px}
 p{color:#b8c5d4;line-height:1.6}
 .btn{display:inline-block;background:#57dec7;color:#071c22;padding:15px 28px;border-radius:10px;text-decoration:none;font-weight:800;margin-top:18px}
+.note{font-size:14px;line-height:1.55}
 .btn:hover{background:#8af3e2}
 .preview{background:#16263b;border:1px solid #30465d;border-radius:20px;overflow:hidden}
 .preview img{display:block;width:100%;height:auto}
@@ -48,16 +50,21 @@ header{gap:12px}
 
 <section class="hero">
 <div>
-<h1>Дізнайтесь, скільки <span class="accent">заробляє</span> ваша кав'ярня з кожного напою</h1>
-<p>Готовий Excel-калькулятор для розрахунку собівартості, маржі, прибутку та рекомендованої ціни до 100 позицій меню.</p>
+<h1>Розрахуйте собівартість і <span class="accent">маржу</span> кожного напою у вашій кав’ярні</h1>
+<p>Готовий Excel-калькулятор для розрахунку прямих витрат, маржі та орієнтовної ціни продажу для фіксованої цільової маржі 70%. До 100 позицій меню.</p>
 <a class="btn" href="https://coffeeprofitua.blacksea.in.ua/l/gsk">Отримати калькулятор — 193,70 грн</a>
+<p class="note">Різниця між ціною продажу та внесеними витратами — внесок на покриття інших витрат бізнесу, а не чистий прибуток. Оренда, зарплати й податки автоматично не враховуються.</p>
 </div>
 
 <div class="preview">
-<img
-src="./Калькулятор прибутку для кав’ярні (1).png"
-alt="Coffee Profit — Excel-калькулятор собівартості кави для кав'ярні"
-loading="eager">
+<picture>
+<source type="image/webp"
+ srcset="./coffee-profit-preview-480.webp 480w, ./coffee-profit-preview-768.webp 768w, ./coffee-profit-preview-1024.webp 1024w"
+ sizes="(max-width: 720px) calc(100vw - 48px), (max-width: 1040px) calc((100vw - 88px) / 2.3), 414px">
+<img src="./Калькулятор прибутку для кав’ярні (1).png"
+ alt="Coffee Profit — Excel-калькулятор собівартості кави для кав'ярні"
+ width="1024" height="1536" loading="eager">
+</picture>
 </div>
 </section>
 
@@ -70,11 +77,11 @@ loading="eager">
 </div>
 <div class="card">
 <h3>02 · Маржа</h3>
-<p>Оцінюйте маржинальність і прибуток з продажу кожного напою після врахованих витрат.</p>
+<p>Порівнюйте фактичну маржу напоїв за введеними цінами продажу та витратами.</p>
 </div>
 <div class="card">
 <h3>03 · Ціноутворення</h3>
-<p>Визначайте орієнтовну ціну продажу відповідно до бажаної маржі.</p>
+<p>Розраховуйте орієнтовну ціну продажу для фіксованої цільової маржі 70%.</p>
 </div>
 </div>
 </section>
